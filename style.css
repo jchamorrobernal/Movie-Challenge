@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+header {
+    font-size: 96px;
+    color: #ffffff;
+    background-color: #2F0E2C;
+    width: 100%;
+}
+
+nav {
+    font-size: 26px;
+    color: #ffffff;
+    background-color: #006BA6;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 0%
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    background: linear-gradient(180deg, #742270 9.37%, rgba(255, 255, 255, 0) 92.19%), #006BA6;
+}
+
+.maincards{
+    display: flex;
+}
+
+.card {
+    width: 20.83%;
+    margin: 2% 0%;
+}
+
+.cover {
+    width: 100%;
+    height: 447px;
+    background-color: black;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.datacard {
+    width: 100%;
+    height: 120px;
+    background-color: #2F0E2C;
+    border-radius: 0px 0px 10px 10px;
+}
+
+footer {
+    background-color: #212121;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+.socialmedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+.redessociales {
+    width:10%;
+    height:50px;
+}
+
+#facebook {
+    background-image: url("./images/logo facebook.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#instagram {
+    background-image: url("./images/logo\ instagram.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#twitter {
+    background-image: url("./images/logo twitter.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

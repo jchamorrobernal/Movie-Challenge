@@ -2,34 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ani-mate</title>
     <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
 </head>
 <body>
 <header>
     <p id="title">¡Ani-Mate!</p>
 </header>
 <nav id="navbar">
-    <select name="genre" id="genre">Genre
-    
+    <select name="genre" id="genre">
+        <option value="all">Genre</option>    
     </select>
-    <select name="origin" id="origin">Origin</select>
-    <select name="order" id="order">Order</select>
+        
+    </select>
+    <select name="origin" id="origin">
+        <option value="all">Origin</option>  
+    </select>
+
+    <select name="order" id="order">
+        <option value="all">Order</option>  
+    </select>
+
     <div id="magnifiericon"></div>
     <input type="text" name="" id="searchbar" placeholder="Search by name...">
 
 </nav>
 <main>
+    <article id="card" class="card">
+        <div id="cover" class="cover"></div>
+        <div id="datacard" class="datacard">
+            <p id="movietitle"></p>
+            <p id="moviegenre"></p>
+            <p id="movieorigin"></p>
+        </div>
+    </article>
+
+    <article id="card" class="card">
+        <div id="cover" class="cover"></div>
+        <div id="datacard" class="datacard">
+            <p id="movietitle"></p>
+            <p id="moviegenre"></p>
+            <p id="movieorigin"></p>
+        </div>
+    </article>
+
+    <article id="card" class="card">
+        <div id="cover" class="cover"></div>
+        <div id="datacard" class="datacard">
+            <p id="movietitle"></p>
+            <p id="moviegenre"></p>
+            <p id="movieorigin"></p>
+        </div>
+    </article>
 
     <section id="buttonspages"></section>
 </main>
 
 <footer>
-    <section id="socialmedia"></section>
+    <section id="socialmedia" class="socialmedia">
+        <div id="facebook" class="redessociales"></div>
+        <div id="instagram" class="redessociales"></div>
+        <div id="twitter" class="redessociales"></div>
+    </section>
     <section id="contactinfo">
-        <div id="About">About Us</div>
-        <div id="Contact"></div>
+        <div id="about">About Us</div>
+        <div id="contact">Contact</div>
     </section>
 </footer>
 
