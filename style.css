@@ -11,9 +11,17 @@ body {
 }
 
 header {
+    background-color: #2F0E2C;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
     font-size: 96px;
     color: #ffffff;
-    background-color: #2F0E2C;
+    padding-bottom: 1%;
+    padding-left: 2%;
     width: 100%;
 }
 
@@ -23,9 +31,32 @@ nav {
     background-color: #006BA6;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 2% 0%
+}
+
+.filter {
+    border: none;
+    background-color: #006BA6;
+    color: white;
+    font-size: 26px;
+    margin-left: 10%;
+}
+
+.searchbar {
+    margin-right: 2%;
+    width: 10%;
+}
+
+.magnifier {
+    width: 5%;
+    margin-left: auto;
+    background-image: url("./images/magnifier.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 main {
@@ -100,4 +131,37 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.contactinfo {
+    color: white;
+    font-size: 18px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+@media all and (max-width: 440px) {
+    .title {
+        font-size: 58px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .title {
+        font-size: 48px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .maincards{
+        width: 60%;
+    }
+
 }
