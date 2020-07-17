@@ -32,33 +32,22 @@ comedia ... o... ¡lo que quieran!
 
 - Este proyecto se debe resolver en equipos.
 - Usa la API de [OMDB](http://www.omdbapi.com/) (The Open Movie Database).
-- Tiempo para completar el reto: 3 días.
-- Habrán dos presentaciones, una a la mitad de la _reto_ y otra al final.
+- Tiempo para completar el reto: 7 días.
 
 ## Objetivos de aprendizaje
 
 - Enfrentarte a un reto de corta duración en el que pongas
   en práctica todo lo aprendido hasta ahora.
   
-- Que sigas desarrollando tus habilidades de trabajo en equipo. Mientras más
-  personas en un equipo de trabajo, mayor complejidad para: tener un
-  entendimiento común, seguir el flujo de trabajo, buscar consensos, etc.
+- Que sigas desarrollando tus habilidades de organizar tu tiempo y manejo de la frustración.
 
 ## Avances necesarios
 
-- Todo el planeamiento del trabajo deberá ser detallado en un repositorio único
-  por _squad_ en el que se presente el _planning_, el _research_, los _sketches_
-  y las inspiraciones utilizadas para definir el producto.
-- Además, deberás detallar en el archivo _readme_, qué hizo cada integrante del
-  proyecto.
 - El producto deberá presentarse publicado en github pages.
+
 
 ## Consideraciones técnicas
 
 - El diseño visual de los componentes es de libre elección.
 - Pueden usar algún framework de css si así lo deciden.
-
-## Sobre las presentaciones
-
-- Habrá una presentación voluntaria al final.
 
