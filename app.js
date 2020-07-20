@@ -18,7 +18,7 @@ export const getAnswer = (name) => {
             </div>`           
         }
 
-        else {
+        else if (valor[5].includes("Animation")) {
             console.log(typeof(valor))
             console.log(data.value)
             main.innerHTML = 
@@ -34,6 +34,11 @@ export const getAnswer = (name) => {
             <p id="movieorigin">${data.Country}</p>
             </div>
             </article>`
-    }
+        }
+        else {
+            main.innerHTML = `<div class="searcherror">
+            <p>This movie is not animation, please try a different title...</p>
+            </div>`     
+        }
     })
 };

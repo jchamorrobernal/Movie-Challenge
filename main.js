@@ -34,7 +34,9 @@ contact.addEventListener('click', function()
 
 const arrayUrl = ["http://www.omdbapi.com/?i=tt0851578&apikey=57127a04", "http://www.omdbapi.com/?i=tt4633694&apikey=57127a04",
  "http://www.omdbapi.com/?i=tt1865505&apikey=57127a04", "http://www.omdbapi.com/?i=tt2576852&apikey=57127a04", 
- "http://www.omdbapi.com/?i=tt0070544&apikey=57127a04", "http://www.omdbapi.com/?i=tt0095327&apikey=57127a04"]
+ "http://www.omdbapi.com/?i=tt0070544&apikey=57127a04", "http://www.omdbapi.com/?i=tt0095327&apikey=57127a04", "http://www.omdbapi.com/?i=tt5311514&apikey=57127a04",
+ "http://www.omdbapi.com/?i=tt1401106&apikey=57127a04", "http://www.omdbapi.com/?i=tt0119698&apikey=57127a04", "http://www.omdbapi.com/?i=tt0910970&apikey=57127a04",
+ "http://www.omdbapi.com/?i=tt0087544&apikey=57127a04", "http://www.omdbapi.com/?i=tt3901826&apikey=57127a04"]
 
 // Card template
 
