@@ -74,6 +74,7 @@ Respecto a la distribución en listado, se tomó como ejemplo sitios como Cuevan
 - #2F0E2C
 - #006BA6
 - #212121
+
 El sitio web cuenta con un juego de colores de 2 tonos. El color principal es el purpura, el cuál se utiliza principalmente para el header y la información de las tarjetas en un tono más oscuro. También se le da uso en el fondo de la sección principal en un tono más claro, para resaltar la sección.
 
 Este color se eligió debido a que la sicología del mismo resalta elementos como la creatividad, la fantasía y los sueños. Esto se condice con la razón de ser del sitio que habla sobre animación y de invitar al usuario a "descubrir nuevos mundos" en las películas que encuentre usando la plataforma. 
@@ -103,6 +104,6 @@ Por último, una sección interesante es agregar un slider en la parte superior,
 ## Esta página fue construida con:
 * HTML
 * CSS
-* Javascript
+* JavaScript
 ## Autor: 
 Javier Chamorro
