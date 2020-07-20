@@ -11,11 +11,24 @@ const main = document.getElementById('container');
 const searchbar = document.getElementById('searchbar')
 const tituloHome = document.getElementById('title')
 const magnifier = document.getElementById('magnifiericon')
-// Boton volver a Index
+
+// Interaccion header y footer
 
 tituloHome.addEventListener('click', function() {
     window.location.replace("./index.html")
     });
+
+const aboutUs = document.getElementById('about')
+
+aboutUs.addEventListener('click', function() 
+    { window.location.replace('./aboutus.html')}
+    )
+    
+const contact= document.getElementById('contact')
+    
+contact.addEventListener('click', function() 
+    { window.location.replace('./contact.html')}
+    )
 
 // Movies
 
@@ -67,13 +80,6 @@ magnifier.addEventListener('click', function(event) {
 // sort movies
 
 // footer
-
-const aboutUs = document.getElementById('about')
-
-aboutUs.addEventListener('click', function() 
-{ location.href = './aboutus.html'}
-)
-
 
 /*
 const tarjeta = (data) => {

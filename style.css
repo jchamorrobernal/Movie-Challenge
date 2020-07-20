@@ -136,7 +136,8 @@ main {
 .aboutus {
     color: white;
     height: 500px;
-    padding: 2% 2%
+    padding: 2% 2%;
+    width: 100%;
 }
 
 footer {
@@ -148,6 +149,9 @@ footer {
     
 }
 
+.footerlink:hover {
+    color: #742270;
+}
 .socialmedia {
     display: flex;
     flex-direction: row;
