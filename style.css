@@ -57,24 +57,38 @@ nav {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 4%;
+}
+
+.magnifier:hover {
+    background-color:#742270;
+    border-radius: 15px;
 }
 
 main {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+    align-items: center;
     background: linear-gradient(180deg, #742270 9.37%, rgba(255, 255, 255, 0) 92.19%), #006BA6;
 }
 
-.maincards{
+.container { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+
+.maincards {
     display: flex;
 }
 
 .card {
-    width: 20.83%;
+    width: 30%;
     margin: 2% 0%;
 }
 
@@ -83,6 +97,12 @@ main {
     height: 447px;
     background-color: black;
     border-radius: 10px 10px 0px 0px;
+    border: black 5px;
+    flex-grow: 0;
+}
+
+.linkcard {
+    height: 447px;
 }
 
 .datacard {
@@ -90,6 +110,33 @@ main {
     height: 120px;
     background-color: #2F0E2C;
     border-radius: 0px 0px 10px 10px;
+    color: white;  
+}
+
+#movietitle {
+    font-size: 20px;
+    margin: 2%;
+}
+
+#moviegenre {
+    font-size: 12px;
+    margin: 2%;
+}
+
+#movieorigin {
+    font-size: 14px;
+    margin: 2%;
+}
+
+.searcherror {
+    height: 500px;
+    color: white;
+    padding-top: 2%;
+}
+.aboutus {
+    color: white;
+    height: 500px;
+    padding: 2% 2%
 }
 
 footer {
@@ -108,7 +155,7 @@ footer {
     margin: 2%;
 }
 .redessociales {
-    width:10%;
+    width:7%;
     height:50px;
 }
 
@@ -139,6 +186,13 @@ footer {
     margin-left: 2%;
     margin-bottom: 2%;
 }
+@media all and (max-width: 768px) {
+    .card {
+        width: 40%;
+    }
+}
+
+
 @media all and (max-width: 440px) {
     .title {
         font-size: 58px;
@@ -160,8 +214,9 @@ footer {
         align-content: center;
     }
 
-    .maincards{
-        width: 60%;
+    .card {
+        width: 80%;
     }
 
 }
+
