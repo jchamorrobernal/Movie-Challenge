@@ -53,19 +53,19 @@ export const movieSelector = (value) => {
     }
     else if(value === 'western europe'){
         main.innerHTML = ''
-        europeanWesternMovies.forEach(cardTemplate)
+        europeanWesternMovies.forEach(element => cardTemplate(element))
     }
     else if(value === 'north america'){
         main.innerHTML = ''
-        northAmericaMovies.forEach(cardTemplate)
+        northAmericaMovies.forEach(element => cardTemplate(element))
     }
     else if (value === 'south america'){
         main.innerHTML = ''
-        southAmericaMovies.forEach(cardTemplate)
+        southAmericaMovies.forEach(element => cardTemplate(element))
     }
     else if (value === 'oceania'){
         main.innerHTML = ''
-        oceaniaMovies.forEach(cardTemplate)
+        oceaniaMovies.forEach(element => cardTemplate(element))
     }
 
     cardTemplate(value)
