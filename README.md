@@ -1,18 +1,18 @@
 # Introducción
 
-Las películas de animación son un mercado que en las últimas decadas se ha establecido como una plataforma potente de inversión. Según la información de [statista.com](https://www.statista.com/statistics/817601/worldwide-animation-market-size/), el mercado de los largometrajes de animación ha crecido y para el año 2020 se estima que tiene un movimiento de 270 millones de dolares. 
+Las películas de animación son un mercado que en las últimas decadas se ha establecido como una plataforma potente de inversión. Según la información de [statista.com](httpss://www.statista.com/statistics/817601/worldwide-animation-market-size/), el mercado de los largometrajes de animación ha crecido y para el año 2020 se estima que tiene un movimiento de 270 millones de dolares. 
 
 <img src="imagenesREADME/mercadoanimacion.png">
 
 # Definición de usuario
 
-Para muchos la primera película animada fue [Blanca Nieves y los Siete Enanitos](http://www.openculture.com/2011/04/how_walt_disney_cartoons_are_made_.html) realizada por el estudio de Walt Disney en 1937. La animación como concepto ha existido de mucho antes, pero este fue un hito importante ya que se consideró como una película comparable al cine de la época. 
+Para muchos la primera película animada fue [Blanca Nieves y los Siete Enanitos](https://www.openculture.com/2011/04/how_walt_disney_cartoons_are_made_.html) realizada por el estudio de Walt Disney en 1937. La animación como concepto ha existido de mucho antes, pero este fue un hito importante ya que se consideró como una película comparable al cine de la época. 
 
 Aún así en las decadas posteriores, la animación siempre fue relegada a un segundo plano comparado al cine tradicional. Esto cambiaría en la últimas 3 decadas donde poderosas productoras como Disney, Dreamworks y Warner (por nombrar algunos), dieron paso a la producción de películas de muy buena calidad y muy queridas por el público. 
 
 Esto dio pie a que el consumo de esta industria se expandiera para otros paises como lo es Europa y Asia, especialmente Japón, que cuenta al día de hoy con una gran gama de producciones, siendo el estudio Ghibli uno de los más reconocidos. 
 
-El mercado norteamericano es el más potente, pero no solo disfrutan sus propias animaciones si no que son el mercado que consume más animación. Un ejemplo es que Estados Unidos es el país que más ve peliculas de animación japonesa según la estadistica de [Parrot Analytics](https://www.parrotanalytics.com/insights/the-global-content-marketplace-audience-demand-for-anime/)
+El mercado norteamericano es el más potente, pero no solo disfrutan sus propias animaciones si no que son el mercado que consume más animación. Un ejemplo es que Estados Unidos es el país que más ve peliculas de animación japonesa según la estadistica de [Parrot Analytics](httpss://www.parrotanalytics.com/insights/the-global-content-marketplace-audience-demand-for-anime/)
 
 <img src="imagenesREADME/estadisticaanime.png">
 
