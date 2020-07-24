@@ -47,7 +47,7 @@ nav {
 
 .searchbar {
     margin-right: 2%;
-    width: 15%;
+    width: 30%;
 }
 
 .magnifier {
@@ -68,9 +68,10 @@ nav {
 main {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
     background: linear-gradient(180deg, #742270 9.37%, rgba(255, 255, 255, 0) 92.19%), #006BA6;
 }
 
@@ -88,8 +89,8 @@ main {
 }
 
 .card {
-    width: 30%;
-    margin: 2% 0%;
+    width: 20%;
+    margin: 2% 4%;
 }
 
 .cover {
@@ -102,7 +103,7 @@ main {
 }
 
 .linkcard {
-    height: 447px;
+
 }
 
 .datacard {
@@ -194,6 +195,9 @@ footer {
     .card {
         width: 40%;
     }
+    .searchbar {
+        width: 30%;
+    }
 }
 
 
@@ -220,6 +224,9 @@ footer {
 
     .card {
         width: 80%;
+    }
+    .searchbar {
+        width: 40%;
     }
 
 }

@@ -1,12 +1,10 @@
 // Funciones Exportadas
 
-import { getAnswer } from './app.js'
+import { getAnswer, movieSelector, cardTemplate } from './app.js'
 
 // Manipulación DOM
 
-const genre = document.getElementById('genre');
-const origin = document.getElementById('origin');
-const order = document.getElementById('order');
+const movieSort = document.getElementById('moviesort');
 const main = document.getElementById('container'); 
 const searchbar = document.getElementById('searchbar')
 const tituloHome = document.getElementById('title')
@@ -30,39 +28,9 @@ contact.addEventListener('click', function()
     { window.location.replace('./contact.html')}
     )
 
-// Movies
-
-const arrayUrl = ["http://www.omdbapi.com/?i=tt0851578&apikey=57127a04", "http://www.omdbapi.com/?i=tt4633694&apikey=57127a04",
- "http://www.omdbapi.com/?i=tt1865505&apikey=57127a04", "http://www.omdbapi.com/?i=tt2576852&apikey=57127a04", 
- "http://www.omdbapi.com/?i=tt0070544&apikey=57127a04", "http://www.omdbapi.com/?i=tt0095327&apikey=57127a04", "http://www.omdbapi.com/?i=tt5311514&apikey=57127a04",
- "http://www.omdbapi.com/?i=tt1401106&apikey=57127a04", "http://www.omdbapi.com/?i=tt0119698&apikey=57127a04", "http://www.omdbapi.com/?i=tt0910970&apikey=57127a04",
- "http://www.omdbapi.com/?i=tt0087544&apikey=57127a04", "http://www.omdbapi.com/?i=tt3901826&apikey=57127a04"]
-
 // Card template
 
-arrayUrl.forEach(function element(data) 
-
-{
-        fetch(data)
-        .then(res => res.json() ) 
-        .then(data => {
-        main.innerHTML += 
-        `<article id="card" class="card">
-            <div id="linkcard" class="linkcard">
-                <a href="https://www.imdb.com/title/${data.imdbID}" target="_blank">  
-                <img src='${data.Poster}' id="cover" class="cover">
-                </a>
-            </div>    
-            <div id="datacard" class="datacard">
-            <p id="movietitle">${data.Title}</p>
-            <p id="moviegenre">${data.Genre}</p>
-            <p id="movieorigin">${data.Country}</p>
-            </div>
-        </article>`
-        console.log(data)
-    })
-    });
-
+// window.forEach(cardTemplate(indexMovies))
 
 // searchbar
 
@@ -81,6 +49,11 @@ magnifier.addEventListener('click', function(event) {
 
 // sort movies
 
+movieSort.addEventListener('change', () => {
+    const selectorValue = movieSort.value;
+    movieSelector(selectorValue);
+}
+)
 // footer
 
 /*
