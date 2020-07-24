@@ -10,7 +10,7 @@ const europeanWesternMovies = ["https://www.omdbapi.com/?i=tt1865505&apikey=5712
 "https://www.omdbapi.com/?i=tt1821641&apikey=57127a04", "https://www.omdbapi.com/?i=tt2990836&apikey=57127a04", "https://www.omdbapi.com/?i=tt1235830&apikey=57127a04",
 "https://www.omdbapi.com/?i=tt2321405&apikey=57127a04", "https://www.omdbapi.com/?i=tt3262342&apikey=57127a04", "https://www.omdbapi.com/?i=tt2967856&apikey=57127a04"]
 
-const europeanEasternMovies = ["httpss://www.omdbapi.com/?i=tt1343712&apikey=57127a04", "https://www.omdbapi.com/?i=tt2243621&apikey=57127a04", "https://www.omdbapi.com/?i=tt0457024&apikey=57127a04", 
+const europeanEasternMovies = ["https://www.omdbapi.com/?i=tt1343712&apikey=57127a04", "https://www.omdbapi.com/?i=tt2243621&apikey=57127a04", "https://www.omdbapi.com/?i=tt0457024&apikey=57127a04", 
 "https://www.omdbapi.com/?i=tt6685538&apikey=57127a04", "https://www.omdbapi.com/?i=tt1230144&apikey=57127a04", "https://www.omdbapi.com/?i=tt0863136&apikey=57127a04",
 "https://www.omdbapi.com/?i=tt0440846&apikey=57127a04", "https://www.omdbapi.com/?i=tt10375360&apikey=57127a04", "https://www.omdbapi.com/?i=tt0289263&apikey=57127a04"]
 
@@ -41,15 +41,15 @@ export const movieSelector = (value) => {
     console.log("dentro de la funcion movie selector, el valor que estoy pasando es: " + value)
     if(value === 'africa' ){
         main.innerHTML = ''
-        africanMovies.forEach(cardTemplate)
+        africanMovies.forEach(element => cardTemplate(element))
     }
     else if(value === 'asia'){
         main.innerHTML = ''
-        asiaMovies.forEach(cardTemplate)
+        asiaMovies.forEach(element => cardTemplate(element))
     }
     else if(value === 'eastern europe'){
         main.innerHTML = ''
-        europeanEasternMovies.forEach(cardTemplate)
+        europeanEasternMovies.forEach(element => cardTemplate(element))
     }
     else if(value === 'western europe'){
         main.innerHTML = ''
