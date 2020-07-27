@@ -52,7 +52,8 @@ movieSort.addEventListener('change', () => {
 
 // default load
 
-addEventListener('load', () => {
+/*addEventListener('load', () => {
     const selectorValue = movieSort.value;
     movieSelector(selectorValue);
     });
+*/
