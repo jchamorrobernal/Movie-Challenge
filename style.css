@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background: linear-gradient(180deg, rgba(56, 19, 53, 0.95) 8.85%, rgba(142, 47, 134, 0.63) 73.96%, rgba(140, 15, 129, 0.08) 100%), url(./images/animation\ collage.jpg);
+    background: linear-gradient(180deg, rgba(56, 19, 53, 0.95) 8.85%, rgba(142, 47, 134, 0.63) 73.96%, rgba(140, 15, 129, 0.08) 100%), url(./images/animation\ collage\ 1.jpg);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,9 +19,17 @@ header {
     height: 500px;
 }
 
+.headerpages {
+    height: 250px;
+}
+
 .contacts {
     color: #ffffff;
     margin: 2%;
+}
+
+.contacts:hover {
+    color: #742270;
 }
 .uppermenu {
     width: 100%;
@@ -33,10 +41,12 @@ header {
 .title {
     width: 50%;
     align-self: center;
+    text-shadow: 0px 0px 10px #000000;
 }
 
 .headline {
     align-self: center;
+    text-shadow: 0px 0px 10px #000000;
 }
 
 .logoandheadline {
@@ -49,15 +59,17 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .description {
-    width: 45%;
+    width: 40%;
     color: #ffffff;
     font-weight: bold;
-    font-size: 28px;
-    margin-left: 10%;
+    font-size: 36px;
+    text-shadow: 0px 0px 10px #000000;
+    margin: 3% 10%;
 }
 
 .moviesortbox {
@@ -68,9 +80,11 @@ header {
 .moviesort {
     background-color: #00B5CE;
     color: #ffffff;
-    width: 70%;
+    width: 90%;
     height: 50px;
     border-radius: 15px;
+    font-size: 30px;
+    padding: 1% 5%;
 }
 
 nav {
@@ -94,6 +108,7 @@ nav {
 }
 
 .searchbar {
+    color: #212121;
     margin-right: 2%;
     width: 30%;
     height: 40%;
@@ -101,15 +116,18 @@ nav {
     border-radius: 15px;
     margin-top: 2%;
     margin-left: 1%;
+    padding: 0% 1%;
 }
 
 .magnifier {
     width: 3%;
     margin-left: auto;
+    margin-top: 0.7%;
     background-image: url("./images/magnifier.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    text-shadow: 0px 0px 10px #000000;
 }
 
 .magnifier:hover {
@@ -155,20 +173,20 @@ main {
     flex-grow: 0;
 }
 
-.linkcard {
-
-}
-
 .datacard {
     width: 100%;
-    height: 120px;
+    height: 180px;
     background-color: #2F0E2C;
     border-radius: 0px 0px 10px 10px;
     color: white;  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 #movietitle {
     font-size: 20px;
+    font-weight: bold;
     margin: 2%;
 }
 
@@ -182,11 +200,41 @@ main {
     margin: 2%;
 }
 
+#imdbbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+#imdbinvite {
+    margin: 0% 5%;
+    font-size: 14px;
+    font-style: italic;
+}
+
+#imdbbuttonbox {
+    width: 20%;
+    margin: 0% 2%;
+
+}
+
+#imdbbutton {
+    background-image: url("./images/imdb.png");
+    width: 100%;
+    margin-bottom: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .searcherror {
     height: 500px;
     color: white;
     padding-top: 2%;
 }
+
 .aboutus {
     color: white;
     height: 500px;
@@ -206,15 +254,18 @@ footer {
 .footerlink:hover {
     color: #742270;
 }
+
 .socialmedia {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 2%;
 }
+
 .redessociales {
-    width:7%;
-    height:50px;
+    width:2.7%;
+    height:30px;
+    margin: 2.5%;
 }
 
 #facebook {
@@ -261,14 +312,36 @@ footer {
 }
 
 @media all and (max-width: 375px) {
+    header {
+        height: 300px;
+    }
+    .headerpages{
+        height: 150px;
+    }
     .title {
         font-size: 48px;
     }
+    .headline{
 
-    nav {
-        width: 100%;
     }
-
+    .description {
+        width: 100%;
+        font-size: 22px;
+        margin: 1% 5%;
+        text-align: center;
+    }
+    .searchbar {
+        width: 40%;
+        margin-top: 3%;
+    }
+    .moviesortbox{
+    width: 80%;
+    margin-left: 20%;
+    }
+    .moviesort {
+    font-size: 26px;
+    width: 80%;
+    }
     main {
         flex-direction: column;
         justify-content: center;
@@ -278,9 +351,11 @@ footer {
     .card {
         width: 80%;
     }
-    .searchbar {
-        width: 40%;
+
+    .redessociales {
+        width:9%;
+        height:30px;
+        margin: 5.5%;
     }
 
 }
-

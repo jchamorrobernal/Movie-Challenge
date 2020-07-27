@@ -68,6 +68,11 @@ export const movieSelector = (value) => {
         main.innerHTML = ''
         oceaniaMovies.forEach(element => cardTemplate(element))
     }
+    
+    else if (value === 'index'){
+        main.innerHTML = ''
+        indexMovies.forEach(element => cardTemplate(element))
+    }
 
     cardTemplate(value)
 }
@@ -90,16 +95,24 @@ export const getAnswer = (name) => {
         else if (valor[5].includes("Animation")) {
             main.innerHTML = 
             `<article id="card" class="card">
-            <div id="linkcard" class="linkcard">
-            <a href="https://www.imdb.com/title/${data.imdbID}" target="_blank">  
-            <img src='${data.Poster}' id="cover" class="cover">
-            </a>
-            </div>    
-            <div id="datacard" class="datacard">
-            <p id="movietitle">${data.Title}</p>
-            <p id="moviegenre">${data.Genre}</p>
-            <p id="movieorigin">${data.Country}</p>
-            </div>
+                <div id="linkcard" class="linkcard">
+                    <a href="https://www.imdb.com/title/${data.imdbID}" target="_blank">  
+                    <img src='${data.Poster}' id="cover" class="cover">
+                    </a>
+                </div>    
+                <div id="datacard" class="datacard">
+                    <p id="movietitle">${data.Title}</p>
+                    <p id="moviegenre">${data.Genre}</p>
+                    <p id="movieorigin">${data.Country}</p>
+                    <div id="imdbbox">
+                        <p id="imdbinvite">Read more on: </p>   
+                        <div id="imdbbuttonbox">
+                            <a href="https://www.imdb.com/title/${data.imdbID}" target="_blank">
+                            <img src="./images/imdb.png" id="imdbbutton">
+                            </a>
+                        </div>    
+                    </div>
+                </div>
             </article>`
         }
         else {
@@ -124,10 +137,18 @@ export const cardTemplate = (data) => {
                 </a>
             </div>    
             <div id="datacard" class="datacard">
-            <p id="movietitle">${data.Title}</p>
-            <p id="moviegenre">${data.Genre}</p>
-            <p id="movieorigin">${data.Country}</p>
-            </div>
+                <p id="movietitle">${data.Title}</p>
+                <p id="moviegenre">${data.Genre}</p>
+                <p id="movieorigin">${data.Country}</p>
+                <div id="imdbbox">
+                        <p id="imdbinvite">Read more on: </p>   
+                        <div id="imdbbuttonbox">
+                            <a href="https://www.imdb.com/title/${data.imdbID}" target="_blank">
+                            <img src="./images/imdb.png" id="imdbbutton">
+                            </a>
+                        </div>    
+                    </div>
+                </div>
         </article>`
         console.log(data)
 });
