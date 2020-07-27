@@ -5,7 +5,6 @@ import { getAnswer, movieSelector, cardTemplate } from './app.js'
 // Manipulación DOM
 
 const movieSort = document.getElementById('moviesort');
-const main = document.getElementById('container'); 
 const searchbar = document.getElementById('searchbar')
 const tituloHome = document.getElementById('title')
 const magnifier = document.getElementById('magnifiericon')
@@ -36,6 +35,7 @@ contact.addEventListener('click', function()
 
 searchbar.addEventListener('keyup', function(event) {
     if (event.keyCode == 13 ) {
+        console.log(searchbar.value)
         const searchValue = searchbar.value
         getAnswer(searchValue)
     }

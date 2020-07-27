@@ -34,6 +34,7 @@ const northAmericaMovies = ["https://www.omdbapi.com/?i=tt0414469&apikey=57127a0
 "https://www.omdbapi.com/?i=tt2262227&apikey=57127a04", "https://www.omdbapi.com/?i=tt1828224&apikey=57127a04", "https://www.omdbapi.com/?i=tt5265948&apikey=57127a04",
 "https://www.omdbapi.com/?i=tt0129167&apikey=57127a04", "https://www.omdbapi.com/?i=tt5104604&apikey=57127a04", "https://www.omdbapi.com/?i=tt1754656&apikey=57127a04"]
 
+const main = document.getElementById('container'); 
 
 // selector function
 
@@ -74,12 +75,11 @@ export const movieSelector = (value) => {
 // searchbar function
 
 export const getAnswer = (name) => {
-    const searchUrl = `httpss://www.omdbapi.com/?t=${name}&apikey=57127a04`
+    const searchUrl = `https://www.omdbapi.com/?t=${name}&apikey=57127a04`
     fetch(searchUrl)
     .then(res => res.json() ) 
     .then(data => {
         const valor = Object.values(data);
-        console.log(valor)
         if (valor.includes("False")) {
             console.log(typeof(valor))
             main.innerHTML = `<div class="searcherror">
@@ -88,12 +88,10 @@ export const getAnswer = (name) => {
         }
 
         else if (valor[5].includes("Animation")) {
-            console.log(typeof(valor))
-            console.log(data.value)
             main.innerHTML = 
             `<article id="card" class="card">
             <div id="linkcard" class="linkcard">
-            <a href="httpss://www.imdb.com/title/${data.imdbID}" target="_blank">  
+            <a href="https://www.imdb.com/title/${data.imdbID}" target="_blank">  
             <img src='${data.Poster}' id="cover" class="cover">
             </a>
             </div>    
@@ -121,7 +119,7 @@ export const cardTemplate = (data) => {
         main.innerHTML += 
         `<article id="card" class="card">
             <div id="linkcard" class="linkcard">
-                <a href="httpss://www.imdb.com/title/${data.imdbID}" target="_blank">  
+                <a href="https://www.imdb.com/title/${data.imdbID}" target="_blank">  
                 <img src='${data.Poster}' id="cover" class="cover">
                 </a>
             </div>    
